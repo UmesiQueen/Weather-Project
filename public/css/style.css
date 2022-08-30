@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(233, 255, 255);
+  position: relative;
+}
+
+.container {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 45em;
+}
+
+h1,
+.subtext {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 48px;
+}
+
+.subtext,
+.text {
+  font-family: "Prompt", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+div:not(.container,.main) {
+  margin: 1em 0;
+}
+
+form {
+  width: fit-content;
+  margin: auto;
+}
+
+.top-cloud {
+  margin-left: auto;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px black solid;
+  margin: 0 1em;
+  outline: none;
+}
+
+button {
+  padding: 1px 4px;
+  font-family: "Prompt", sans-serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 3px grey;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.596);
+}
+
+.mountain {
+  width: 50%;
+  margin: auto;
+}
+
+.main {
+  height: 30em;
+  width: 40em;
+}
+.query{
+  font-size: 32px;
+}
+
+ul {
+  float: left;
+  margin-right: 2em;
+}
+
+li {
+  margin-bottom: 1em;
+}
