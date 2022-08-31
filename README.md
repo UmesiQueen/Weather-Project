@@ -21,6 +21,9 @@ This solution is from Angela Yu's Udemy Web Development Boot Camp Course - Secti
  ![Alt text](public/images/Screenshot.png?raw=true)
  ![Alt text](public/images/Screenshot2.png?raw=true)
 
+### Links
+  Live site with Heroku : [Click to View!]() 
+
 ## My process
 
 ### Built with
@@ -36,16 +39,24 @@ This solution is from Angela Yu's Udemy Web Development Boot Camp Course - Secti
 ### Requirement
 
 - run _npm install_ on terminal
- - Create an account on [OpenWeatherMap.org](https://home.openweathermap.org/)
- - Locate and copy your personal apikey
- - In the root directory create a new file named **apiKeys.js** 
- - Create const with name **openWeatherMapAPIKey** in new file and assign value of personal apiKey retrieved
- - export const 
 
-Final result should look like
->exports.openWeatherMapAPIKey = "6fdf*******e588";  
+-If you do not have an account, 
+  - Create an account on [OpenWeatherMap.org](https://home.openweathermap.org/)
+  - Locate and copy your personal apiKey
+  -Read openWeatherMap [API docs](https://openweathermap.org/current) for more
+
+- In the root directory create a new file named **apiKeys.js** 
+  - Create variable with name **openWeatherMapAPIKey** and assign value of personal apiKey retrieved
+  - export variable 
+
+
+* **apiKeys.js** should look like
+        exports.openWeatherMapAPIKey = "6fdf*******e588";  
+
+-Finally, in terminal run `node app.js`
 
 That's all you'll Need.
+
 Happy coding!❤💚
 
 
