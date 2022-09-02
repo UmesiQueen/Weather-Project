@@ -9,26 +9,17 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <h1>Weather App</h1>
-      <p class="subtext">Check the weather condition of your desired city.</p>
-      <div>
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
-      </div>
-      <div class="form">
-        <form action="/" method="post">
+      <p class="text">Check the weather condition of your desired city.</p>
 
-          <label for="cityInput" class="text">City Name: </label>
-          <input type="text" name="cityName" id="cityInput" />
-          <button type="submit">GO</button>
-        </form>
-      </div>
-      <div>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
-      </div>
-      <div>
-        <img class="mountain" src="images/mountain.png" alt="mountain-img" />
-      </div>
-    </div>
+      <form action="/" method="post" class="main">
+        <label for="cityInput" class="text">City Name: </label>
+        <input type="text" name="cityName" id="cityInput" />
+        <button type="submit">GO</button>
+      </form>
+
+      <img class="icon" src="images/weather-app.png" alt="not avail">
+    </main>
   </body>
 </html>

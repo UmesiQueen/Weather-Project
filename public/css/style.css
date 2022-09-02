@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,53 +8,36 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
   background-color: rgb(233, 255, 255);
-  position: relative;
-}
-
-.container {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 45em;
-}
-
-h1,
-.subtext {
   text-align: center;
+  display: flex;
+  place-content: center;
+
+}
+
+.container{
+  max-width: 700px;
+  height: 400px;
+  margin: auto;
+  padding: 2em;
 }
 
 h1 {
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 48px;
+  margin-bottom: 10px;
 }
 
-.subtext,
 .text {
   font-family: "Prompt", sans-serif;
 }
 
-img {
-  display: block;
-}
-
-div:not(.container,.main) {
-  margin: 1em 0;
-}
-
-form {
-  width: fit-content;
-  margin: auto;
-}
-
-.top-cloud {
-  margin-left: auto;
+.main {
+  margin-top: 3em;
 }
 
 input[type="text"] {
@@ -62,6 +46,7 @@ input[type="text"] {
   border-bottom: 1px black solid;
   margin: 0 1em;
   outline: none;
+  height: 1.8em;
 }
 
 button {
@@ -77,24 +62,25 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.596);
 }
 
-.mountain {
-  width: 50%;
-  margin: auto;
+.icon{
+  width: 200px;
+  margin-top: 3em;
 }
 
-.main {
-  height: 30em;
-  width: 40em;
-}
+
+/* response */
 .query{
   font-size: 32px;
 }
 
-ul {
-  float: left;
-  margin-right: 2em;
-}
-
 li {
   margin-bottom: 1em;
+  text-align: left;
+}
+
+.weatherIcon{
+  display: block;
+  width: 80px;
+  margin-top: -1em;
+  float: right;
 }
