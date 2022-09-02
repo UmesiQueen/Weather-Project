@@ -22,7 +22,7 @@ This solution is from Angela Yu's Udemy Web Development Boot Camp Course - Secti
  ![Alt text](public/images/Screenshot2.png?raw=true)
 
 ### Links
-  Live site with Heroku : [Click to View!]() 
+  Live site with Heroku : [Click to View!](https://fathomless-forest-29682.herokuapp.com/) 
 
 ## My process
 
@@ -32,31 +32,32 @@ This solution is from Angela Yu's Udemy Web Development Boot Camp Course - Secti
 - CSS custom properties
 - JavaScript
 - NodeJs
-- Express
+- ExpressJs
 - OpenWeatherMap API
+- Heroku CLI
 
 
 ### Requirement
 
-- run _npm install_ on terminal
+- run `npm install` on terminal
 
--If you do not have an account, 
-  - Create an account on [OpenWeatherMap.org](https://home.openweathermap.org/)
-  - Locate and copy your personal apiKey
-  -Read openWeatherMap [API docs](https://openweathermap.org/current) for more
+- Must have an account with OpenWeatherMap 
+  - If you do not have an account, Create one on [OpenWeatherMap.org](https://home.openweathermap.org/)
+  - Locate and copy your personal api key
 
 - In the root directory create a new file named **apiKeys.js** 
-  - Create variable with name **openWeatherMapAPIKey** and assign value of personal apiKey retrieved
+  - Create variable **openWeatherMapAPIKey** and assign value of personal apiKey retrieved
   - export variable 
 
 
-* **apiKeys.js** should look like
-        exports.openWeatherMapAPIKey = "6fdf*******e588";  
+#### **apiKeys.js** Code Snippet
+```
+        exports.openWeatherMapAPIKey = "fdf*******e88";  
+```
 
--Finally, in terminal run `node app.js`
+> :bulb: **Tip:** Read OpenWeatherMap [API docs](https://openweathermap.org/current).
 
-That's all you'll Need.
-
+That's all you'll need.     
 Happy coding!❤💚
 
 
