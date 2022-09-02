@@ -45,9 +45,13 @@ app.post("/", function (req, res) {
           "<meta http-equiv='X-UA-Compatible' content='IE=edge' />" +
           "<meta name='viewport' content='width=device-width, initial-scale=1.0'/>" +
           "<title>Weather App</title><link rel='stylesheet' href='css/style.css' />" +
-          "</head><body><div class='container main'><h1>Weather App</h1><p class='query subtext'> " +
+          "</head><body><main class='container'><h1>Weather App</h1><p class='query text'> " +
           name +
-          " </p><div><ul><li class='text'>Country : " +
+          " </p><div class='main'>"+
+          "<img class='weatherIcon' src='" +
+          imageURL +
+          "' alt='Unavailable'/><ul>"+
+          "<li class='text'>Country : " +
           country +
           "</li>" +
           "<li class='text'>Weather : " +
@@ -59,11 +63,8 @@ app.post("/", function (req, res) {
           "<li class='text'>Temperature : " +
           temp +
           " Degrees Celsius</li> " +
-          "</ul>" +
-          "<img src='" +
-          imageURL +
-          "' alt='Unavailable'/></div>" +
-          "</div></body></html>"
+          "</ul></div>" +
+          "</main></body></html>"
       );
     });
   });
